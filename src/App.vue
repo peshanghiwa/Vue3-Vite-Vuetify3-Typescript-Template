@@ -1,24 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Vue 3 + TypeScript + Vite" />
+  <v-app>
+    <div class="container-test">
+      <img alt="Vue logo" src="./assets/logo.png" />
+      <HelloWorld msg="Vue 3 + TypeScript + Vite + Vuetify 3" />
+
+      <a href="https://github.com/peshanghiwa" target="_blank" class="creator"
+        >Peshang Hiwa</a
+      >
+    </div>
+  </v-app>
 </template>
 <script setup lang="ts">
 import { defineComponent } from "@vue/runtime-core";
 import HelloWorld from "./components/HelloWorld.vue";
 defineComponent(HelloWorld);
-
-console.log("hey");
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container-test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.creator {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
 }
 </style>
