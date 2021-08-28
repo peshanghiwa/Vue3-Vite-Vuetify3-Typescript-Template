@@ -1,18 +1,12 @@
 <template>
   <h1>{{ msg }}</h1>
-  <v-btn class="ma-2" color="#41B883" elevation="0" @click="count++" dark>
-    <span> Count: {{ count }} </span>
-  </v-btn>
+  <p class="mb-5">
+    With fully functional configrations for Vuex, SCSS, Vuetify themes,
+    Directives, Middlewares, mixins and plugins. <br />
+    All written in typescript ES6 Modular form with single file component and
+    script setup mode for vue.
+  </p>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
 defineProps<{ msg: string }>();
-//
-const count = ref(0);
 </script>
-<style scoped>
-.count {
-  color: #304455;
-  font-weight: bold;
-}
-</style>
