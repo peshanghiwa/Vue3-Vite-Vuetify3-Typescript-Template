@@ -1,8 +1,11 @@
-import { createApp } from 'vue'
-import vuetify from './plugins/vuetify'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import { vuetify } from "./plugins/vuetify";
+import router from "./router";
+import { store, key } from "./store/index";
 
 const app = createApp(App)
-app.use(vuetify)
-
-app.mount('#app')
+  .use(store, key)
+  .use(router)
+  .use(vuetify)
+  .mount("#app");
