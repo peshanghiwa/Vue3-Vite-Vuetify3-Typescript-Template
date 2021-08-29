@@ -17,4 +17,4 @@ Router, Directives, Middlewares and Mixins are all configured and prebuilt in to
 - Vuex Store: Store is configured with module form that supports multiple versions of stores with dfferent names, as it is more efficient for medium and big projects.
   
 ## Coming next
-- The template will be updated frequently, adding more important plugins and configurations in to it.
+-  Multilangual Configurations (i18n).
