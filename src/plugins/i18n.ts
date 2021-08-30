@@ -7,6 +7,7 @@ import fr from "../locales/fr.json";
 
 export default createI18n({
   locale: "en",
+  fallbackLocale: "en",
   messages: {
     en,
     kr,

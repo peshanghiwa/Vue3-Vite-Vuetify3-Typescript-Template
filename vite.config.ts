@@ -1,22 +1,21 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueI18n from "@intlify/vite-plugin-vue-i18n";
-import path from "path";
-// const srcPath = path.resolve(__dirname, "src", "styles", "variables.scss");
 
-// https://vitejs.dev/config/
+import { join, resolve } from "path";
 export default defineConfig({
+  mode: "development",
+  resolve: {
+    alias: {
+      "@": join(__dirname, "./src"),
+    },
+  },
   plugins: [
     vue(),
     vueI18n({
-      include: path.resolve(__dirname, "./path/to/src/locales/**"),
+      include: resolve(__dirname, "./locales/**"),
     }),
   ],
-  resolve: {
-    alias: {
-      "@": path.join(__dirname, "./src"),
-    },
-  },
   define: { "process.env": {} },
   css: {
     preprocessorOptions: {

@@ -1,4 +1,5 @@
 {
   "language": "langue",
-  "hello": "bonjour"
+  "hello": "bonjour",
+  "description": "ceci est une page protégée"
 }
