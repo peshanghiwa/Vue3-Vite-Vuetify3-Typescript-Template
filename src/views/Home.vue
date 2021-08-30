@@ -54,7 +54,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { computed, ref, getCurrentInstance } from "@vue/runtime-core";
+import { computed, ref } from "@vue/runtime-core";
 // @ts-ignore
 import HelloWorld from "../components/HelloWorld.vue";
 import { key } from "../store";
@@ -66,8 +66,6 @@ const store = useStore(key);
 const auth = computed(() => {
   return store.getters.getAuth;
 });
-
-const app = getCurrentInstance();
 </script>
 <style scoped lang="scss">
 .container {
