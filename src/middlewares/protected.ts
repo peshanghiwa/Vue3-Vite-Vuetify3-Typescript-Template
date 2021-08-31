@@ -1,5 +1,5 @@
-import { NavigationGuardNext, RouteLocationNormalized } from "vue-router";
-import { store } from "../store";
+import { NavigationGuardNext, RouteLocationNormalized } from 'vue-router'
+import { store } from '../store'
 
 export default (
   to: RouteLocationNormalized,
@@ -7,8 +7,8 @@ export default (
   next: NavigationGuardNext
 ): void => {
   if (store.getters.getAuth) {
-    next();
+    next()
   } else {
-    next("/");
+    next('/')
   }
-};
+}

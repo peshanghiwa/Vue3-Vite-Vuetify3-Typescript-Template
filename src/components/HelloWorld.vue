@@ -7,6 +7,8 @@
     setup mode for vue.
   </p>
 </template>
+
 <script setup lang="ts">
-defineProps<{ msg: string }>();
+  import { defineProps } from '@vue/runtime-core'
+  defineProps<{ msg: string }>()
 </script>

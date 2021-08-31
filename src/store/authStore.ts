@@ -1,5 +1,5 @@
-import { ActionContext } from "vuex";
-import Auth from "../types/authType";
+import { ActionContext } from 'vuex'
+import Auth from '../types/authType'
 
 export const AuthStore = {
   state: {
@@ -7,17 +7,17 @@ export const AuthStore = {
   },
   getters: {
     getAuth(state: Auth): boolean {
-      return state.loggedIn;
+      return state.loggedIn
     },
   },
   actions: {
     changeAuth(context: ActionContext<Auth, Auth>, data: boolean): void {
-      context.commit("changeAuth", data);
+      context.commit('changeAuth', data)
     },
   },
   mutations: {
     changeAuth(state: Auth, data: boolean): void {
-      state.loggedIn = data;
+      state.loggedIn = data
     },
   },
-};
+}
