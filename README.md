@@ -8,7 +8,7 @@ Router, Directives, Middlewares and Mixins are all configured and prebuilt in to
   
 - Typescript: The whole project is written with typescipt modular form, which is great as it's the new trend and most of the libraries are starting to migrate/support modular form (Ex: Firebase).
   
-- Vite: The project is built on top of vite, which have boosted everything from server-start up to production bundle. You can't describe how amazing vite is here in one line so i recommend reading this official article from Vite to know more about it https://vitejs.dev/guide/why.html.
+- Vite: The project is built on top of vite, which have boosted everything from server-start up to production bundle. You can read this official article from Vite to know more about it https://vitejs.dev/guide/why.html.
   
 - Vuetify 3: Alpha version of Vuetify 3 is available and is completly configured including custom themes and colors.
   
