@@ -14,6 +14,7 @@ export default defineConfig({
     vue(),
     vueI18n({
       include: resolve(__dirname, "./locales/**"),
+      runtimeOnly: false
     }),
   ],
   define: { "process.env": {} },

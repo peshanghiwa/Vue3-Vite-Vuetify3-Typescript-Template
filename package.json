@@ -46,5 +46,8 @@
     "vite": "^2.5.1",
     "vue-cli-plugin-vuetify": "~2.4.2",
     "vue-tsc": "^0.2.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
