@@ -6,7 +6,8 @@
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "serve": "vite preview",
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "test:unit": "jest src"
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix",
